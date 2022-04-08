@@ -1,0 +1,93 @@
+/* font */
+
+@font-face {
+  font-family: "IRANSans Medium";
+  src: url(./font/IRANSansX-Medium.woff);
+}
+
+/* Start Project */
+body {
+  direction: rtl;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IRANSans Medium";
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.container {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.new_todo {
+  width: 100%;
+  height: 50vh;
+  background: #fff;
+  background: linear-gradient(0deg, #fff 47%, rgb(0, 110, 255) 47%);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.new_todo_box {
+  background-color: #fff;
+  width: 50%;
+  height: 8rem;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  position: relative;
+}
+.label {
+  position: absolute;
+  top: 30px;
+  right: 70px;
+}
+.new_todo_input {
+  margin: 4.5rem auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.input {
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  height: 2rem;
+  padding: 1rem;
+}
+.btn {
+  background-color: rgb(0, 110, 255);
+  color: #fff;
+  border: 2px solid rgb(0, 110, 255);
+  border-radius: 10px;
+  padding: 0 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background-color: #fff;
+  color: rgb(0, 110, 255);
+}
+.todo_list {
+  width: 50%;
+  margin: 0 auto;
+}
+.todo_list_item {
+  border: 1px solid #ccc;
+  height: 4rem;
+  display: flex;
+  padding: 0 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.fa {
+  cursor: pointer;
+  color: rgb(0, 110, 255);
+  font-size: 1.5rem !important;
+}
